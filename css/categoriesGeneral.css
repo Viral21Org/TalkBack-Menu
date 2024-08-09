@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  text-align: center;
+  background: #d6eae7;
+}
+
+.container h1 {
+  margin-top: 0 !important;
+  margin-bottom: 50px;
+  color: #505050;
+  text-transform: uppercase;
+  padding-top: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+.container .quote {
+  padding: 10px;
+  margin: 10px;
+}
+.container .quote p {
+  font-size: 26px;
+  color: #505050;
+}
+.container .boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .box {
+  padding: 10px;
+  margin: 10px;
+  width: 47%;
+}
+.container .box h4 {
+  color: #505050;
+  font-size: 18px;
+}
+.container .box img {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.container .box .price {
+  width: 100%;
+  background-color: #7cc1d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Media Queries for Laptops */
+@media only screen and (max-width: 1280px) {
+  .container .box img {
+    max-width: 350px;
+  }
+}
+/* Media Queries for Tablets and larger smartphone */
+@media only screen and (max-width: 768px) {
+  .container .boxes {
+    flex-direction: column;
+  }
+  .container .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+  }
+  .container .box img {
+    max-width: 350px;
+  }
+  .container .box .price {
+    width: 75%;
+  }
+}
+/* Media Queries for Small Mobile */
+@media only screen and (max-width: 480px) {
+  .container h1 {
+    padding-top: 30px;
+    margin: 30px 0;
+  }
+  .container .boxes {
+    flex-direction: column;
+  }
+  .container .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+  }
+  .container .box img {
+    max-width: 300px;
+  }
+  .container .box .price {
+    width: 50%;
+  }
+}
