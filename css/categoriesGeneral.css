@@ -41,7 +41,7 @@ body {
 }
 .container .box h4 {
   color: #505050;
-  font-size: 18px;
+  font-size: 24px;
 }
 .container .box img {
   border-radius: 12px;
@@ -51,7 +51,8 @@ body {
   -o-border-radius: 12px;
 }
 .container .box .price {
-  width: 100%;
+  width: 460px;
+  margin: 0 auto;
   background-color: #7cc1d5;
   display: flex;
   align-items: center;
@@ -71,6 +72,9 @@ body {
 @media only screen and (max-width: 1280px) {
   .container .box img {
     max-width: 350px;
+  }
+  .container .box .price {
+    width: 350px;
   }
 }
 /* Media Queries for Tablets and larger smartphone */
