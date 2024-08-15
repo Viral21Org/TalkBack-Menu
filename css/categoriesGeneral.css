@@ -35,6 +35,10 @@ body {
   flex-wrap: wrap;
 }
 .container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   margin: 10px;
   width: 47%;
@@ -42,6 +46,10 @@ body {
 .container .box h4 {
   color: #505050;
   font-size: 24px;
+  text-transform: uppercase;
+}
+.container .box p {
+  max-width: 460px;
 }
 .container .box img {
   border-radius: 12px;
@@ -70,7 +78,8 @@ body {
 
 /* Media Queries for Laptops */
 @media only screen and (max-width: 1280px) {
-  .container .box img {
+  .container .box img,
+  .container .box p {
     max-width: 350px;
   }
   .container .box .price {
@@ -89,7 +98,8 @@ body {
     justify-content: center;
     width: 99%;
   }
-  .container .box img {
+  .container .box img,
+  .container .box p {
     max-width: 350px;
   }
   .container .box .price {
@@ -112,7 +122,9 @@ body {
     justify-content: center;
     width: 97%;
   }
-  .container .box img {
+
+  .container .box img,
+  .container .box p {
     max-width: 300px;
   }
   .container .box .price {
