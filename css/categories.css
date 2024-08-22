@@ -44,7 +44,7 @@ body {
   overflow: hidden;
 }
 .card h4 {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
   color: #000000;
 }
@@ -52,7 +52,7 @@ body {
   color: #857b7b;
 }
 .card img {
-  max-width: 100px;
+  max-width: 180px;
 }
 .card:hover{
   transform: scale();
