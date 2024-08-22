@@ -8,7 +8,7 @@ body {
 
 .container {
   margin: 0 auto;
-  background:#e9d1d9;
+  background: #e9d1d9;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -20,11 +20,11 @@ body {
 }
 
 .menu {
-  margin: 0 auto;
   position: relative;
-  text-align: center;
-  background:#e9d1d9;
-
+  background: #e9d1d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu img {
   max-width: 430px;
@@ -32,21 +32,9 @@ body {
 }
 .menu a {
   position: absolute;
-  top: 370px;
-  left: 690px;
   text-decoration: none;
   color: #ffffff;
   font-size: 15px;
   font-weight: bold;
 }
 
-
-@media (max-width:600px) {
-  .menu a{
-    top: 370px;
-    left: 170px;
-  }
-  body{
-    height: 145vh;
-  }
-}
