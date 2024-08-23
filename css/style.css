@@ -9,6 +9,18 @@
 body {
   font-family: "Open24Display", sans-serif;
 }
+.container {
+  margin: 0 auto;
+  background: #e9d1d9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.container img {
+  max-width: 324px;
+}
 
 .menu {
   width: 100%;
@@ -49,7 +61,7 @@ body {
 
 /* Media Queries for Laptops */
 @media only screen and (max-width: 1280px) {
-  .menu .Mobile-cover{
+  .menu .Mobile-cover {
     display: none;
   }
   .menu a {
