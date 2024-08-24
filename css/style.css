@@ -76,7 +76,7 @@ body {
   }
   .menu .Mobile-cover {
     display: block;
-    max-width: 430px;
+    max-width: 100%;
   }
   .menu a {
     margin-right: 0;
