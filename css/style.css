@@ -33,6 +33,7 @@ body {
 .menu .Mobile-cover {
   display: none;
   background-color: #e9d1d9;
+  height: 100vh;
 }
 .menu a {
   position: absolute;
