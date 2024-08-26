@@ -8,6 +8,7 @@
 }
 body {
   font-family: "Open24Display", sans-serif;
+  overflow: hidden;
 }
 
 #loader {
@@ -36,31 +37,34 @@ body {
   height: 100%;
   object-fit: fill;
 }
+
 .container {
-  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
   background: #e9d1d9;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
 }
-.container .logo {
-  max-width: 500px;
+.container .img-holder {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.container .img-holder .logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 300px;
 }
 .menu {
   position: relative;
   width: 100%;
-  background: #e9d1d9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: -36px;
+  height: 100vh;
 }
 
 .menu .Laptop-cover {
   display: block;
   width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
+  height: 100%;
 }
 .menu .Mobile-cover {
   display: none;
@@ -74,9 +78,9 @@ body {
   font-size: 24px;
   font-weight: bold;
   animation: vanishAppear 1s infinite;
-  margin-right: 60px;
   -webkit-animation: vanishAppear 1s infinite;
-  margin-top: 10px;
+  top: 47%;
+  left: 44%;
 }
 
 @keyframes vanishAppear {
@@ -91,29 +95,24 @@ body {
 
 /* Media Queries for Laptops */
 @media only screen and (max-width: 1279px) {
-  .menu .Mobile-cover {
-    display: none;
-  }
   .menu a {
-    font-size: 26px;
-    margin-right: 65px;
+    font-size: 18px;
+    top: 49%;
+    left: 44%;
   }
 }
 /* Media Queries for Tablets and larger smartphone */
 @media only screen and (max-width: 768px) {
-  #loader img{
+  #loader img {
     object-fit: cover;
   }
   .menu .Laptop-cover {
-    display: none;
+    object-fit: cover;
   }
-  .menu .Mobile-cover {
-    display: block;
-    max-width: 100%;
-  }
+
   .menu a {
-    margin-top: 0;
-    margin-right: 0;
+    top: 47%;
+    left: 44%;
     font-size: 32px;
   }
   .container .logo {
@@ -138,15 +137,11 @@ body {
     pointer-events: none; /* Prevent interactions when hidden */
   }
   .menu .Laptop-cover {
-    display: none;
-  }
-  .menu .Mobile-cover {
-    display: block;
-    max-width: 100%;
+    object-fit: cover;
   }
   .menu a {
-    margin-top: 0;
-    margin-right: 0;
+    top: 48%;
+    left: 34%;
     font-size: 20px;
   }
   .container .logo {
