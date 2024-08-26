@@ -10,6 +10,22 @@ body {
   font-family: "Open24Display", sans-serif;
 }
 
+#loader {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  transition: opacity 0.5s ease; /* Add a transition for opacity */
+  opacity: 1; /* Initial opacity */
+  width: 100%;
+}
+
+#loader.hidden {
+  opacity: 0; /* Fade out by changing opacity to 0 */
+  pointer-events: none; /* Prevent interactions when hidden */
+}
+#loader img {
+  width: 100%;
+}
 .menu {
   position: relative;
   width: 100%;
@@ -19,7 +35,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.menu .logo{
+.menu .logo {
   position: absolute;
   top: 0;
   max-width: 400px;
@@ -82,12 +98,27 @@ body {
     margin-right: 0;
     font-size: 20px;
   }
-  .menu .logo{
+  .menu .logo {
     max-width: 170px;
   }
 }
 /* Media Queries for Small Mobile */
 @media only screen and (max-width: 480px) {
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: opacity 0.5s ease; /* Add a transition for opacity */
+    opacity: 1; /* Initial opacity */
+    width: max-content;
+  }
+
+  #loader.hidden {
+    opacity: 0; /* Fade out by changing opacity to 0 */
+    pointer-events: none; /* Prevent interactions when hidden */
+  }
   .menu .Laptop-cover {
     display: none;
   }
@@ -100,7 +131,7 @@ body {
     margin-right: 0;
     font-size: 20px;
   }
-  .menu .logo{
+  .menu .logo {
     max-width: 170px;
   }
 }

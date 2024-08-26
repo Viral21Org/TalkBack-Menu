@@ -51,6 +51,7 @@ body {
   max-width: 460px;
 }
 .container .box img {
+  max-width: 400px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;

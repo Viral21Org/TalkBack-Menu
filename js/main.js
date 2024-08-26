@@ -1,10 +1,13 @@
-let cards = document.querySelectorAll(".card");
-cards.forEach((card) => {
-  card.onmousemove = function (e) {
-    let x = e.pageX - card.offsetLeft;
-    let y = e.pageY - card.offsetTop;
+window.addEventListener('load', function() {
+  const minimumLoadTime = 3500; // Minimum time to show the loader (e.g., 1 second)
 
-    card.style.setProperty("--x", x + "px");
-    card.style.setProperty("--y", y + "px");
-  };
+  setTimeout(function() {
+      // Add the 'hidden' class to trigger the fade-out transition
+      document.getElementById('loader').classList.add('hidden');
+
+      // Wait for the transition to complete before fully hiding the loader
+      setTimeout(function() {
+          document.getElementById('loader').style.display = 'none';
+      }, 500); // This delay should match the transition duration (0.5s in this case)
+  }, minimumLoadTime);
 });
