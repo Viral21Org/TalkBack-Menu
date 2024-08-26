@@ -9,26 +9,21 @@
 body {
   font-family: "Open24Display", sans-serif;
 }
-.container {
-  margin: 0 auto;
-  background: #e9d1d9;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-.container img {
-  max-width: 324px;
-}
 
 .menu {
+  position: relative;
   width: 100%;
   position: relative;
   background: #e9d1d9;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.menu .logo{
+  position: absolute;
+  top: 0;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .menu .Laptop-cover {
   width: 100%;
@@ -43,10 +38,12 @@ body {
   position: absolute;
   text-decoration: none;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
-  animation: vanishAppear 2s infinite;
-  margin-right: 55px;
+  animation: vanishAppear 1s infinite;
+  margin-right: 60px;
+  -webkit-animation: vanishAppear 1s infinite;
+  margin-top: 130px;
 }
 
 @keyframes vanishAppear {
@@ -65,7 +62,8 @@ body {
     display: none;
   }
   .menu a {
-    font-size: 18px;
+    margin-top: 80px;
+    font-size: 16px;
     margin-right: 40px;
   }
 }
@@ -79,8 +77,12 @@ body {
     max-width: 100%;
   }
   .menu a {
+    margin-top: 0;
     margin-right: 0;
     font-size: 20px;
+  }
+  .menu .logo{
+    max-width: 170px;
   }
 }
 /* Media Queries for Small Mobile */
@@ -93,7 +95,11 @@ body {
     max-width: 100%;
   }
   .menu a {
+    margin-top: 0;
     margin-right: 0;
     font-size: 20px;
+  }
+  .menu .logo{
+    max-width: 170px;
   }
 }
