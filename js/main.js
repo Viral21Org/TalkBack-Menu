@@ -19,6 +19,6 @@ function leftClick() {
 function rightClick() {
   btn.style.left = "140px";
   setTimeout(() => {
-    window.location.href = "TalkBack-Menu/categoriesArabic.html";
+    window.location.href = "/categoriesArabic.html";
   }, 1000);
 }
