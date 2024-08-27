@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-  
   margin: 0 auto;
   text-align: center;
   min-height: 100vh;
@@ -55,6 +54,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .card h4 {
   font-size: 28px;
@@ -62,16 +66,13 @@ body {
   color: #000000;
   margin: 0 0 10px 0;
 }
-.card p {
-  color: #857b7b;
-}
 .card img {
   max-width: 200px;
   height: 150px;
 }
 
 @media only screen and (max-width: 768px) {
-  .container img{
+  .container img {
     max-width: 300px;
   }
   .card {
@@ -79,7 +80,7 @@ body {
   }
 }
 @media only screen and (max-width: 480px) {
-  .container img{
+  .container img {
     max-width: 200px;
   }
   .card {
