@@ -42,6 +42,13 @@ body {
   width: 100%;
   height: 100vh;
   background: #e9d1d9;
+  position: relative;
+}
+.container .form-box {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 30px;
 }
 .container .img-holder {
   position: relative;
@@ -71,8 +78,10 @@ body {
   background: transparent;
   border: 0;
   outline: none;
-  position: relative; 
-  text-align: center;
+  position: relative;
+}
+.ar {
+  margin-left: 50px;
 }
 #btn {
   left: 0;
@@ -159,27 +168,21 @@ body {
 }
 /* Media Queries for Small Mobile */
 @media only screen and (max-width: 480px) {
-  #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    transition: opacity 0.5s ease; /* Add a transition for opacity */
-    opacity: 1; /* Initial opacity */
-    width: max-content;
+  .container .form-box {
+    display: none;
   }
-
-  #loader.hidden {
-    opacity: 0; /* Fade out by changing opacity to 0 */
-    pointer-events: none; /* Prevent interactions when hidden */
+  #loader img{
+    object-fit: cover;
   }
   .menu .Laptop-cover {
     object-fit: cover;
   }
+  .menu {
+    height: 100vh;
+  }
   .menu a {
     top: 48%;
-    left: 34%;
+    left: 35%;
     font-size: 20px;
   }
   .container .logo {
