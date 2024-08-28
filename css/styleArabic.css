@@ -127,7 +127,7 @@ body {
   margin-left: 50px;
 }
 #btn {
-  left: 0;
+  right: 0;
   top: 0;
   position: absolute;
   width: 110px;
@@ -165,7 +165,7 @@ body {
   position: absolute;
   text-decoration: none;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   animation: vanishAppear 1s infinite;
   -webkit-animation: vanishAppear 1s infinite;
@@ -210,6 +210,9 @@ body {
   }
   .container i {
     display: block;
+  }
+  .container .img-holder .logo {
+    width: 300px;
   }
 }
 /* Media Queries for Small Mobile */
